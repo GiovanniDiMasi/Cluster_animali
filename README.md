@@ -26,7 +26,6 @@ Utilizziamo lo strumento describe che ci fornisce una indicazione dei valori sta
 Operando la valutazione della qualità dei dati riscontriamo che non ci sono missing values e la qualità dei dati sembra buona. 
 Restituiamo la lista degli oggetti presenti nel data set in formato più leggibile con unique. Controlliamo se il type della classe ha valori corretti. 
 Ad un certo punto ci accorgiamo che un dato curioso attira la nostra attenzione e temiamo ad un errore nei dati (un animale con 5 legs?) Verifichiamo di cosa si tratta, constatiamo che non è un errore ma una lettura particolare di un dato. Utilizziamo anche rappresentazioni grafiche, tra cui un boxplot relativo alla presenza di gambe nelle varie classi (la classe 5 è fish e contiene la stella marina).
-Facciamo un join tra la tabella degli animali (datazoo) e la tabella delle classi e mostriamo una nuova e più completa classe. 
 Importiamo seaborn per fare l'istogramma delle classi.
 Mostriamo le correlazioni con una Correlation Heatmap ed evidenziamo le correlazioni significative con valore superiore al 75%, sia positive che negative
 Usiamo grupby e, tra l’altro, vediamo che ci sono dei mammiferi, seppure in misura irrisoria (0,048), che depongono le uova (rispondendo al quesito posto nel titolo).
@@ -37,7 +36,7 @@ Importo anche Laber Encoder (per codificare le etichette) e la funzione train_te
 Con il comando drop elimino le stringhe (‘class type’ e ‘animal name’) per inserire solo i dati nella matrice X (che rappresenta i dati 
 Visualizziamo gli oggetti del data set come punti in uno spazio bidimensionale usando make_blobs (e con standard deviation 1.1)
 
-5.	Training & Accuracy Results
+5.	Training & Accuracy Results ### Da rivedere
 Applichiamo la funzione train_test_split già importata e passiamo alla fase di training e alla valutazione della accuratezza di risultati. 
 Usiamo, importandola da sklearn, la funzione di Logistic Regression per testare il modello.
 Quindi, sempre da Sklearn, ma dal pacchetto neural network, usiamo anche MLPClassifier. Infine confrontiamo i risultati.
