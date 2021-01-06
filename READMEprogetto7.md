@@ -3,13 +3,13 @@
 # Fasi di esecuzione del progetto:
 
 Fasi di esecuzione del progetto:
-0	Premises
-1	Exploring Data
-2	Data Visualization
-3	Data Quality Assessment and Missing Values
-4	Preprocessing
-5	Results Visialization
-6	Benchmark and Evaluation
+0	Premises.
+1	Exploring Data.
+2	Data Visualization.
+3	Data Quality Assessment and Missing Values.
+4	Preprocessing.
+5	Results Visialization.
+6	Benchmark and Evaluation.
 
 
 0.	Premises.  
@@ -33,18 +33,18 @@ Importiamo seaborn per fare l'istogramma delle classi.
 Mostriamo le correlazioni con una Correlation Heatmap ed evidenziamo le correlazioni significative con valore superiore al 75%, sia positive che negative
 Usiamo grupby e, tra l’altro, vediamo che ci sono dei mammiferi, seppure in misura irrisoria (0,048), che depongono le uova (rispondendo al quesito posto nel titolo).
 
-4.	Preprocessing.
+4.	Preprocessing.  
 Eliminiamo anzitutto dal dataframe le variabili categoriche (animal_name e class_type)
 Dalla libreria sklearn importiamo strumenti per scalare i dati MinMaxScaler (questo è necessario anzitutto in relazione al problema delle “legs”, dato non boolenano il cui valore numerico è diverso da tutti gli altri valori degli altri attributi).
 Si importa anche la Principal Component Analysis per comprimere i dati in due dimensioni e poterli visualizzare.  
 A questo punto possiamo applicare gli algoritmi di clustering. Si applicano nell'ordine kMeans, Agglomerarive Clustering, Spectral Clustering, DBSCAN e Birch. 
 
-5.	Results Visualization.
+5.	Results Visualization    
 Si utilizza matplotlib.pyplot per la visualizzazione dei risultati. 
 Si disegnano 6 grafici bidimensionali per visualizzare i risultati rispettivamente ottenuti dai 5 diversi algoritmi e per la classificazione reale.
 Si realizza anche un dendrogramma per la visualizzazione gerarchica.
 
-6.	Benchmark and Evaluation.
+6.	Benchmark and Evaluation.    
 Utilizziamo due metriche diverse per verificare quanto il risultato ottenuto con gli algoritmi di clustering sia accurato rispetto alla ground truth.
 La prima metrica (completeness_score) misura la completezza del risultato data una ground truth, un risultato sarà cioè 'completo' e avrà un punteggio massimo uguale a 1 se tutti i dati appartenti alla stessa classe sono inseriti nello stesso cluster.
 La seconda metrica (adjusted_rand_score) invece misura la similiarità considerando tutte le coppie di punti e contando quante di queste coppie sono assegnate nello stesso gruppo o in gruppi diversi per entrambi il clustering reale e quello predetto.
