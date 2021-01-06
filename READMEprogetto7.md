@@ -39,7 +39,7 @@ Dalla libreria sklearn importiamo strumenti per scalare i dati MinMaxScaler (que
 Si importa anche la Principal Component Analysis per comprimere i dati in due dimensioni e poterli visualizzare.  
 A questo punto possiamo applicare gli algoritmi di clustering. Si applicano nell'ordine kMeans, Agglomerarive Clustering, Spectral Clustering, DBSCAN e Birch. 
 
-5.	Results Visualization    
+5.	Results Visualization.    
 Si utilizza matplotlib.pyplot per la visualizzazione dei risultati. 
 Si disegnano 6 grafici bidimensionali per visualizzare i risultati rispettivamente ottenuti dai 5 diversi algoritmi e per la classificazione reale.
 Si realizza anche un dendrogramma per la visualizzazione gerarchica.
